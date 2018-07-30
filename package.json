@@ -1,5 +1,11 @@
 {
   "name": "28-routing-and-testing-notes-app",
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__test__/mocks/styleMock.js",
+      "\\.(css|less|scss)$": "<rootDir>/src/__test__/mocks/styleMock.js"
+    }
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -26,6 +32,7 @@
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.5",
     "babel-loader": "^7.1.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
@@ -54,6 +61,7 @@
   },
   "dependencies": {
     "dotenv": "^6.0.0",
-    "superagent": "^3.8.3"
+    "react-router-dom": "^4.3.1",
+    "uuid": "^3.3.2"
   }
 }
