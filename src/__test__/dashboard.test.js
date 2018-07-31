@@ -17,14 +17,14 @@ describe('Dashboard testing', () => {
   });
 
   test('Simple test for initial state', () => {
-    expect(mountedDashboard.state('expenses')).toEqual([]);
+    expect(mountedDashboard.state('notes')).toEqual([]);
   });
 
-  test('Adding a new expense to the state', () => {
-    const mockExpenses = [{ title: 'fake', price: 9.99, _id: '1234' }];
-    mountedDashboard.setState({ expenses: mockExpenses });
-    expect(mountedDashboard.state('expenses')).toEqual(mockExpenses);
-    expect(mountedDashboard.state('expenses')).toHaveLength(1);
-    expect(mountedDashboard.find('p').text()).toEqual('Your total costs are: $9.99');
+  test('Adding a new note to the state', () => {
+    const mockNote = [{ title: 'notes', description: 'notes', _id: 123 }];
+    mountedDashboard.setState({ notes: mockNote });
+    expect(mountedDashboard.state('notes')).toEqual(mockNote);
+    expect(mountedDashboard.state('notes')).toHaveLength(1);
+    expect(mountedDashboard.find('p').text()).toEqual('Your Note is removed');
   });
 });

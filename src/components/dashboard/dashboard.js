@@ -31,9 +31,9 @@ export default class Dashboard extends React.Component {
     });
   }
 
-  handleRemoveNote = (deleteNote) => {
+  handleRemoveNote = (deleteNoteId) => {
     this.setState({
-      notes: this.state.notes.filter(note => note._id !== deleteNote._id),
+      notes: this.state.notes.filter(note => note._id !== deleteNoteId),
     });
   }
 
