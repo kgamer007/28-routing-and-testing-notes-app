@@ -5,10 +5,12 @@ export default class NoteItem extends React.Component {
   constructor(props) {
     super(props);
 
-    this.handleClick = this.handleClick;
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
+    console.log('in here');
+    
     this.props.removeNote(this.props.note._id);
   }
 
