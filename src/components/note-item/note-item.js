@@ -8,9 +8,7 @@ export default class NoteItem extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick() {
-    console.log('in here');
-    
+  handleClick() {    
     this.props.removeNote(this.props.note._id);
   }
 
