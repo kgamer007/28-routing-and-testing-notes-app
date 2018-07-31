@@ -1,22 +1,7 @@
-# DATA STRUCTURES AND ALGORITHMS TEMPLATE README
+
 ## Travis Badge
-<!-- YOUR TRAVIS CI BADGE HERE -->
+[![Build Status](https://travis-ci.com/kgamer007/28-routing-and-testing-notes-app.svg?branch=master)](https://travis-ci.com/kgamer007/28-routing-and-testing-notes-app)
 
-## Challenge
-<!-- YOUR PROBLEM DOMAIN HERE -->
-
-## Whiteboarding Solution:
- <!--YOUR GITHUB IMAGE URL BELOW  -->
-![alt text](YOUR-IMAGE-URL-HERE.jpg)
-
-## Code Solution
-<!-- YOUR CODE HERE -->
-
-<!-- ====================================================================== -->
-
-# LAB TEMPLATE README
-## Travis Badge
-<!-- YOUR TRAVIS CI BADGE HERE -->
-
-## Code
-<!-- YOUR CODE DESCRIPTION HERE -->
+## Description
+This lab is making a TODO app with added components such as NoteForm and NoteList. 
+A removeNote method is also provided to remove any new created entries.
