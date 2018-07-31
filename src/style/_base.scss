@@ -9,11 +9,11 @@ html, body {
 head, script, link  { display: none; }
 p { display: inline-block; }
 span,em,strong { display: inline; }
-em { font-style: italic; }
-strong { font-weight: bold; }
+em { font-style: bold; }
+strong { font-weight: lighter; }
 
 body {
-  background: $color-darkcyan;
+  background: $color-lightgrey;
   font-size: 16px;
 }
 
@@ -22,8 +22,8 @@ body {
 }
 
 blockquote {
-  border-left: $pad solid $color-lightgrey;
-  padding-left: $pad;
+  border-right: $pad solid $color-lightgrey;
+  padding-right: $pad;
 }
 
 @for $i from 6 through 1 {
@@ -35,7 +35,7 @@ blockquote {
 
 // form
 label {
-  font-size: 1.25em;
+  font-size: 1.50em;
   font-weight: bolder;
   margin-bottom: $pad;
 }
@@ -50,11 +50,11 @@ textarea, input {
 
   &:focus {
     background: $color-black;
-    color: $color-white;
+    color: $color-primary;
   }
 
   &::placeholder {
-    color: $color-lightgrey;
+    color: $color-white;
   }
 }
 
@@ -63,7 +63,7 @@ button {
 }
 
 button,input[type="submit"] {
-  background: $color-lightgrey;
+  background: $color-white;
   padding: $pad;
   border: none;
   border-radius: 3px;
