@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Dashboard from '../dashboard/dashboard';
+import Landing from '../landing/landing';
 import './app.scss';
 
 // BrowserRouter wraps our app so we can enable client side routing
@@ -15,7 +16,7 @@ export default class App extends React.Component {
         <BrowserRouter>
           <div>
             <header>
-              <h1>Budget Tracker</h1>
+              <h1>Note maker</h1>
               <nav>
                 <ul>
                   <li><Link to="/">Home</Link></li>
@@ -26,7 +27,7 @@ export default class App extends React.Component {
             <Route 
               exact
               path="/"
-              component={() => <h1>I am your HOME page</h1>}
+              component={Landing}
             />
             <Route 
               exact
