@@ -20,6 +20,9 @@ export default class NoteList extends React.Component {
             return (
               <NoteItem 
               note={note}
+              handleUpdateNote={
+                this.props.handleUpdateNote
+              }
               removeNote={ this.props.handleRemoveNote }
               key={note._id}
               />
@@ -34,7 +37,6 @@ export default class NoteList extends React.Component {
     return (
       <section className="note-list">
       { this.handleRemove() }
-      <p>Your Note is removed</p>
       </section>
     );
   }
@@ -42,5 +44,6 @@ export default class NoteList extends React.Component {
 
 NoteList.propTypes = {
   handleRemoveNote: PropTypes.func,
+  handleUpdateNote: PropTypes.func,
   notes: PropTypes.func,
 };

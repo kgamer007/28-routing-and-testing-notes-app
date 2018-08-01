@@ -25,6 +25,5 @@ describe('Dashboard testing', () => {
     mountedDashboard.setState({ notes: mockNote });
     expect(mountedDashboard.state('notes')).toEqual(mockNote);
     expect(mountedDashboard.state('notes')).toHaveLength(1);
-    expect(mountedDashboard.find('p').text()).toEqual('Your Note is removed');
   });
 });
