@@ -13,7 +13,7 @@ export default class NoteItem extends React.Component {
     };
 
     return (
-      <div className="note-item" data-cy="note-item">
+      <div className="note-item">
         <strong>{note.title}:</strong> {note.description}
         <button 
           onClick={() => removeNote(this.props.note._id)} data-cy="note-item-btn">

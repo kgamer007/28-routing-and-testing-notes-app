@@ -29,9 +29,9 @@ export default class NoteForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} data-cy="note-form">
         <label>title
-        <input
+        <input data-cy="note-item"
             type="text"
             name="title"
             placeholder="title"
@@ -40,7 +40,7 @@ export default class NoteForm extends React.Component {
           />
         </label>
         <label>description
-        <input
+        <input data-cy="note-item-btn"
             type="text"
             name="description"
             placeholder="enter description here"
